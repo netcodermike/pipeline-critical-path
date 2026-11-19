@@ -1,0 +1,14 @@
+{
+  "command": [
+    "{python}",
+    "app.py"
+  ],
+  "expected": {
+    "durationSeconds": 35,
+    "criticalPath": [
+      "compile",
+      "test",
+      "package"
+    ]
+  }
+}

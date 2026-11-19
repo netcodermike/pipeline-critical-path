@@ -1,0 +1,29 @@
+{
+  "stages": [
+    {
+      "id": "compile",
+      "seconds": 20,
+      "after": []
+    },
+    {
+      "id": "lint",
+      "seconds": 8,
+      "after": []
+    },
+    {
+      "id": "test",
+      "seconds": 12,
+      "after": [
+        "compile"
+      ]
+    },
+    {
+      "id": "package",
+      "seconds": 3,
+      "after": [
+        "lint",
+        "test"
+      ]
+    }
+  ]
+}
